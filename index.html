@@ -1,0 +1,197 @@
+<html>
+<head>
+    <title>Philippine Travel Guide</title>
+
+    <style>
+        body {
+            font-family: Courier New;
+            background-color: #F7D794;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #457B9D;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #b81f1a;
+        }
+
+        .header p {
+            color: #F7D794;
+        }
+
+        /* MAIN MENU */
+           .menu { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            background-color: #fdf3bc; 
+            padding: 20px; 
+            border-radius: 12px; 
+        } 
+
+        /* MENU ITEMS */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            background-color: #B93636;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        .menu a:hover {
+            background-color: #C0D6E8;
+            color: #B93636;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px #fdf3bc;
+        }
+
+        /* SUBMENU */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            background-color: #682323;
+            padding: 8px;
+            border-radius: 8px;
+            z-index: 10;
+        }
+
+        /* SHOW SUBMENU */
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        /* SUBMENU LINKS */
+        .submenu a {
+            background-color: #0b1e5c;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .submenu a:hover {
+            background-color: #fdf3bc;
+            transform: translateX(5px);
+        }
+
+        .content {
+            background-color: #fff0cf;
+            text-align: center;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 12px;
+        } 
+ 
+        iframe { 
+            border: 5px solid rgb(0, 0, 0); 
+            border-radius: 15px; 
+        } 
+
+        .footer {
+            text-align: center;
+            background-color: #B93636;
+            color: #C0D6E8;
+            padding: 12px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+            .map-section {
+        text-align: center;
+        margin-bottom: 25px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Philippine Travel Guide</h1>
+        <p>Explore the different sections of the world in one click!</p>
+    </div>
+
+    
+    <nav class="menu">
+
+        <!-- HOME -->
+        <div class="menu-item">
+            <a href="WELCOME.html">Home</a>
+            <div class="submenu">
+                <a href="WELCOME.html">Welcome</a>
+                <a href="ABOUT.html">Featured Destinations</a>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="menu-item">
+            <a href="PHILIPPINES.html">About</a>
+            <div class="submenu">
+                <a href="PHILIPPINES.html">About the Philippines</a>
+                <a href="home.html"> Our Culture </a>
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="menu-item">
+            <a href="act.html">Gallery</a>
+            <div class="submenu">
+                <a href="gallery.html">Tourist Destinations</a>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="menu-item">
+            <a href="CONTACT.html">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <h2>Welcome to Philippine Travel Guide!</h2>
+        <p>Click on the menu items to explore their different sections and subsections, have a great day ahead, Mabuhay!</p>
+    </div>
+    <div class="map-section">
+        <script> 
+document.writeln("<h1> OUR DESTINATIONS!</h1>");
+document.writeln("<iframe id='googlemap'src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002527.052792546!2d117.32692185091412!3d11.660077620073592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1794470671184!5m2!1sen!2sph' width='600' height='400'></iframe>"); 
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.028777057724!2d121.05565044999999!3d16.92387265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3390283d6532de53%3A0x9e3aa754850e375f!2sBatad%20Rice%20Terraces!5e0!3m2!1sen!2sph!4v1794470783347!5m2!1sen!2sph'\">Batad, Rice Terraces</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.8295844058734!2d120.9057343!3d17.080986499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338fd32f4788a175%3A0xf48e20a013c19d0b!2sHanging%20Coffins%20of%20Sagada!5e0!3m2!1sen!2sph!4v1794470847556!5m2!1sen!2sph'\">Hanging Coffins of Sagada</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62449.20670960112!2d121.88602921940944!3d11.96928014479486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1794470923923!5m2!1sen!2sph'\">Boracay</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2012096.032263719!2d117.79054593680124!3d9.944351854430987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b5bce750b99e45%3A0xdfc65f6c0c8d3beb!2sPalawan!5e0!3m2!1sen!2sph!4v1794471022713!5m2!1sen!2sph'\">Palawan</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503138.573145766!2d123.83366532422416!3d9.869645318153548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa17de1ba154df%3A0x6bc8bf042118d020!2sBohol!5e0!3m2!1sen!2sph!4v1794471065857!5m2!1sen!2sph'\">Bohol</button>"); 
+
+</script> 
+    </div>
+
+      <div class="footer">
+        <p> 2026 | Where Every Island Tells a Story </p>
+    </div>
+
+</body>
